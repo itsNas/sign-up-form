@@ -1,0 +1,51 @@
+/* set global margin,padding and font */
+body {
+    font-size: 1.2 rem;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* use flexbox to make the image and forms section to move to the side of each other */
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100vh;
+}
+
+.img-content {
+    flex-grow: 1;
+    position: relative;
+    width: 60vw;
+    min-width: 350px;
+    height: 100vh;
+    background: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.logo-container {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.527);
+    line-height: 2rem;
+    padding: 0px 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 5rem;
+    padding: 10px;
+}
+
+.img-content p {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0px;
+    right: auto;
+}
