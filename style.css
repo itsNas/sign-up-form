@@ -210,6 +210,6 @@ input:invalid:focus {
     .form-row input[type="email"],
     .form-row input[type="tel"],
     .form-row input[type="password"] {
-        width: 70vw;
+        width: 66vw;
     }
 }
