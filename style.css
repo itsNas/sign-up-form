@@ -1,4 +1,11 @@
 /* set global margin,padding and font */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-size: 1.2 rem;
     padding: 0;
@@ -10,13 +17,13 @@ body {
 .main {
     display: flex;
     justify-content: center;
-    width: 100vh;
+    width: 100vw;
 }
 
 .img-content {
     flex-grow: 1;
     position: relative;
-    width: 60vw;
+    width: 40vw;
     min-width: 350px;
     height: 100vh;
     background: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
@@ -48,4 +55,101 @@ body {
     position: absolute;
     bottom: 0px;
     right: auto;
+}
+
+.form-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 2;
+    width: 60vw;
+    flex-grow: 2;
+    background-color: rgb(253, 253, 253);
+}
+
+.description p {
+    font-size: 1.4rem;
+    color: black;
+    padding: 2vh 2vw;
+    font-weight: bold;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(229, 232, 233);
+    margin-bottom: 4vh;
+    padding: 1.2rem 2vw 3rem 2vw;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60vw;
+    gap: 1.5rem;
+    font-size: 1rem;
+}
+
+.form-section>p {
+    font-size: 1.4rem;
+    margin-bottom: 2vh;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="password"] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 14px;
+    width: 25vw;
+}
+
+.form-row label {
+    margin-bottom: 2px;
+}
+
+.submit-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;
+    padding: 2vh 2vw;
+}
+
+.submit-section>div {
+    display: flex;
+    gap: .5vw;
+}
+
+.submit-section button {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(54, 110, 9);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.submit-section button:hover {
+    background-color: rgb(88, 170, 20);
+}
+
+.submit-section>div>a {
+    color: rgb(54, 110, 9);
+    text-decoration: none;
 }
