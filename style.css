@@ -183,6 +183,10 @@ input:invalid:focus {
         height: 20rem;
     }
 
+    .form-content {
+        width: 100vw;
+    }
+
     .description,
     .submit-section,
     form,
